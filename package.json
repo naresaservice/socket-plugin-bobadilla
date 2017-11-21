@@ -1,0 +1,11 @@
+{
+  "name": "socket.plugin-bobadolla",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "socket-plugin-bobadilla",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Plugin for native sockets"
+}
