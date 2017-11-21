@@ -1,9 +1,9 @@
 
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = 'Socket';
+var PLUGIN_NAME = 'SocketPlugin';
 
-var Socket = {
+var SocketPlugin = {
   echo: function(phrase, cb) {
     exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
   },
@@ -12,4 +12,4 @@ var Socket = {
   }
 };
 
-module.exports = Socket;
+module.exports = SocketPlugin;

@@ -16,8 +16,8 @@ import android.util.Log;
 
 import java.util.Date;
 
-public class Socket extends CordovaPlugin {
-  private static final String TAG = "Socket";
+public class SocketPlugin extends CordovaPlugin {
+  private static final String TAG = "SocketPlugin";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
