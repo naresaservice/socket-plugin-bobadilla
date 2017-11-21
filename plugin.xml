@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="socket-plugin-bobadilla"
-    version="1.0.1">
+    version="1.0.2">
     <name>Socket plugin</name>
     <description></description>
     <license>MIT</license>
@@ -22,5 +22,21 @@
       </config-file>
 
       <source-file src="src/android/com/bobadilla/SocketPlugin.java" target-dir="src/com/bobadilla/" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="SocketPlugin" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="SocketPlugin">
+                <param name="ios-package" value="SocketPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/SocketPlugin.h" />
+        <source-file src="src/ios/SocketPlugin.m" />
     </platform>
 </plugin>
